@@ -43,3 +43,10 @@ headerTitle.addEventListener('mouseup', function(e){
     e.target.style.visibility= 'hidden';
     console.log('Where did the title go!');
 });
+
+// Intro paragraph
+const selectedText = document.querySelector('.intro p');
+selectedText.addEventListener('contextmenu', function(e){
+    e.target.style.color= 'darkblue';
+    e.target.style.fontWeight= 'bold';
+});
