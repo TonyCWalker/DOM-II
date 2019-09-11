@@ -36,3 +36,10 @@ headerImg.addEventListener('mousemove', function(e){
     e.target.style.padding= '40px 40px';
     e.stopPropagation();
 });
+
+// Intro title
+const headerTitle = document.querySelector('.intro h2');
+headerTitle.addEventListener('mouseup', function(e){
+    e.target.style.visibility= 'hidden';
+    console.log('Where did the title go!');
+});
