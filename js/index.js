@@ -50,3 +50,16 @@ selectedText.addEventListener('contextmenu', function(e){
     e.target.style.color= 'darkblue';
     e.target.style.fontWeight= 'bold';
 });
+
+// "Let's go" content section
+const firstContent = document.querySelector('.content-section');
+firstContent.addEventListener('mouseleave', function(e){
+    e.target.style.padding= '100px 100px';
+});
+
+// "Pick your destination" content section
+const destinationSelection = document.querySelector('.content-destination');
+destinationSelection.addEventListener('mouseenter', function(e){
+    e.target.style.visibility= 'hidden';
+    console.log('Oops!');
+});
