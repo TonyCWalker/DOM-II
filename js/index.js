@@ -20,3 +20,12 @@ logoHeading.addEventListener('dblclick', function(e){
     e.target.style.fontWeight ='bold';
     e.target.style.fontSize= '80px';
 });
+
+// Navigation item
+const navLink = document.querySelector('nav');
+navLink.addEventListener('click', function(e){
+    e.target.style.fontSize= '25px';
+    e.target.style.fontWeight= 'bold';
+    e.target.style.color= 'purple';
+    console.log(`This is the ${e.srcElement.innerText} link!`); 
+});
