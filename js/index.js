@@ -63,3 +63,10 @@ destinationSelection.addEventListener('mouseenter', function(e){
     e.target.style.visibility= 'hidden';
     console.log('Oops!');
 });
+
+// Bottom section
+const bottomContent = document.querySelector('.content-pick');
+bottomContent.addEventListener('mousedown', function(e){
+    e.target.style.fontWeight= 'bold';
+    e.stopPropagation();
+});
