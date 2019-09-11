@@ -29,3 +29,10 @@ navLink.addEventListener('click', function(e){
     e.target.style.color= 'purple';
     console.log(`This is the ${e.srcElement.innerText} link!`); 
 });
+
+// Header image
+const headerImg = document.querySelector('header img');
+headerImg.addEventListener('mousemove', function(e){
+    e.target.style.padding= '40px 40px';
+    e.stopPropagation();
+});
